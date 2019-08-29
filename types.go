@@ -8,6 +8,8 @@ type HttpRequest struct {
 
 // Structure to represent a Http Response
 type HttpResponse struct {
-	Request HttpRequest
-	Body    string
+	Request    HttpRequest
+	Body       string
+	StatusCode int
+	Error      error
 }
